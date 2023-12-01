@@ -5,8 +5,8 @@ Nums ← {"zero" "one" "two" "three" "four"
 
 Digits ← ∵⍣parse⋅⋅0
 Names ← (
-  ≡⌕Nums¤ # Find matching words
-  ⬚0⊢⍜⍉≡⊚ # Get digits where they match
+  ≡⌕Nums¤   # Find matching words
+  ⬚0⊢⍉⬚0≡⊚⍉ # Get digits where they match
 )
 Calc ← +⊃(×10⊢|⊢⇌) ▽≠0.
 PartOne ← /+⊐≡(Calc Digits)
