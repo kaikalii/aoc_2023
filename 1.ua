@@ -12,7 +12,7 @@ Nums ← {"zero"
         "nine"}
 
 Digits ← ↧⊃(≥@0|≤@9)
-Names ← ⬚0⊢⍉ ⬚0≡⊚ ⍉≡⬚@ ⌕Nums¤
+Names ← ⬚0⊢⍉ ≡⊚ ⍉ ≡⬚@.⌕ Nums¤
 Calc ← +⊃(×10⊢|⊢⇌) ▽≠0.
 PartOne ← /+⊐≡(Calc Digits)
 PartTwo ← /+⊐≡(Calc ⬚0↥ ⊃Names(∵⍣parse⋅⋅0))
