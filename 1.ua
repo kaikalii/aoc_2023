@@ -11,11 +11,11 @@ Nums ← {"zero"
         "eight"
         "nine"}
 
-Digits ← ↧⊃(≥@0|≤@9)
+Digits ← ∵⍣parse⋅⋅0
 Names ← ⬚0⊢⍉ ≡⊚ ⍉ ≡⬚@.⌕ Nums¤
 Calc ← +⊃(×10⊢|⊢⇌) ▽≠0.
 PartOne ← /+⊐≡(Calc Digits)
-PartTwo ← /+⊐≡(Calc ⬚0↥ ⊃Names(∵⍣parse⋅⋅0))
+PartTwo ← /+⊐≡(Calc ⬚0↥ ⊃Names Digits)
 
 PartOne Input
 PartTwo Input
