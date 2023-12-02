@@ -7,7 +7,7 @@ Game ← (
   ↘+2 ⊚⌕@:.         # Remove game id
   ⊜(□⊜Cube≠@,.)≠@;. # Parse cubes
   ⊐/⊂               # Combine 
-  ⊕/↥ ⍘⊟⇌⍉          # Get maxes
+  /⊕/↥ ⇌⍉           # Get maxes
 )
 Counts ← ⊜Game ≠@\n. &fras "2.txt"
 
