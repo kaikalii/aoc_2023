@@ -15,11 +15,8 @@ PartII ← (
   ⊃(=@*)Digits. # Part mask, num mask, input
   # Part indices, num indices, input as numbers
   ⊃∩⊚⋅(
-    ⊃∘(
-      Sections          # Get number strings
-      ⊐/⊂ ⊐≡(□▽⊃⧻parse) # Copy each number as much as its digits
-    )
-    ⍜♭(⍜▽;.) # Replace chars with numbers
+    ⊃∘(⊐/⊂ ⊐≡(□▽⊃⧻parse) Sections) # Copy numbers as much as their digits
+    ⍜♭(⍜▽;.)                       # Replace chars with numbers
   )
   ⊃⊠(>0/↧≤1⌵-)⋅∘    # Get neighbors of each part
   ≡(□⊝≡⊡▽)⊓(∘|¤|¤¤) # Get lists of neighbors
