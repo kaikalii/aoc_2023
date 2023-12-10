@@ -1,6 +1,6 @@
 Input ← &fras "4.txt"
 
-Scores ← /+∊↘1∩(≡(parse⊢)regex"(\\d+)") ⍘⊟⊜□≠@|.
+Scores ← /+∊↘1∩(≡(⋕⊢)regex"(\\d+)") °⊟⊜□≠@|.
 
 PartI ← /+⊜(/+ⁿ:2▽≥0.-1Scores) ≠@\n.
 

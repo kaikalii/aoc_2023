@@ -3,7 +3,7 @@ Input ← ⊜□≠@\n. &fras "1.txt"
 Nums ← {"zero" "one" "two" "three" "four"
         "five" "six" "seven" "eight""nine"}
 
-Digits ← ∵⍣parse⋅⋅0
+Digits ← ∵⍣⋕⋅⋅0
 Names ← (
   ≡⌕Nums¤   # Find matching words
   ⬚0⊢⍉⬚0≡⊚⍉ # Get digits where they match

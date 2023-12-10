@@ -1,7 +1,7 @@
 Colors ← {" red" " green" " blue"}
 Cube ← (
-  ⊢⇌⊚=@ .                     # Find last space
-  ⊟⊃(parse▽≠@ .↙|⊗:Colors □↘) # Parse count and color
+  ⊢⇌⊚=@ .                 # Find last space
+  ⊟⊃(⋕▽≠@ .↙|⊗:Colors □↘) # Parse count and color
 )
 Game ← (
   ↘+2 ⊚⌕@:.         # Remove game id

@@ -9,19 +9,19 @@ PartI ← (
   +⊃↧⋅∘                 # Add to number masks that neighbor parts
   ∩(Sections±) ⊃.⊙∘     # Get number mask groups and number strings
   ▽ ⊐∵/↥ =2             # Get numbers that have a part neighbor
-  /+ ⊐∵parse            # Parse and sum
+  /+ ⊐∵⋕                # Parse and sum
 )
 PartII ← (
   ⊃(=@*)Digits. # Part mask, num mask, input
   # Part indices, num indices, input as numbers
   ⊃∩⊚⋅(
-    ⊃∘(⊐/⊂ ⊐≡(□▽⊃⧻parse) Sections) # Copy numbers as much as their digits
-    ⍜♭(⍜▽;.)                       # Replace chars with numbers
+    ⊃∘(⊐/⊂ ⊐≡(□▽⊃⧻⋕) Sections) # Copy numbers as much as their digits
+    ⍜♭(⍜▽;.)                   # Replace chars with numbers
   )
   ⊃⊠(>0/↧≤1⌵-)⋅∘    # Get neighbors of each part
   ≡(□⊝≡⊡▽)⊓(∘|¤|¤¤) # Get lists of neighbors
   ▽=2∵⧻.            # Keep those with more than one neighbor
-  /+∵(/×⊔)          # Get ratios and sum
+  /+∵(/×°□)         # Get ratios and sum
 )
 
 PartI Input
